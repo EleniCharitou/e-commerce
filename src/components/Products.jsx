@@ -156,7 +156,7 @@ const Products = () => {
               )}
             </div>
             <div className="card-body">
-              <div className="d-flex justify-content-between">
+              <div className="d-flex justify-content-between align-items-center">
               <h5 className="card-title">
                 <Link
                 to={`/product/${product.id}`}
@@ -171,6 +171,7 @@ const Products = () => {
               </h5>
               <h5 className="fw-bold"
                   style={{
+                    display: "inline-block",
                     background: "teal",
                     color: "white",
                     padding: "4px 8px",
@@ -190,7 +191,7 @@ const Products = () => {
               </p>
               
               {/* Sizes Dropdown */}
-              {(product.category=="men's clothing"||product.category== "women's clothing") && (
+              {(product.category === "men's clothing"||product.category === "women's clothing") && (
               <select
                 className="form-select mt-2"
                 style={{ cursor: "pointer" }}
